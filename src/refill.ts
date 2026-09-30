@@ -2,9 +2,9 @@ import { getNeonConnection, getSentences, getUpstashConnection } from "./db"
 
 const redisPoolKey = 'dlystc:sentences:pool'
 
-const fillCountHigh = 80000
-const fillCountLow = 8000
-const fillCountPerCycle = 8000
+const fillCountHigh = 5000
+const fillCountLow = 1000
+const fillCountPerCycle = 1000
 
 export interface RefillReport {
   filled: boolean
